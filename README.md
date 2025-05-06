@@ -40,7 +40,6 @@ Images were preprocessed using resizing, normalization, denoising, and augmentat
 - 🐍 **Python**  
 - 📦 **TensorFlow / Keras** for CNN model design  
 - 📊 **Pandas**, **Matplotlib**, **Seaborn** for data analysis & visualization  
-- 🖼 **OpenCV** for image preprocessing  
 - 🔍 **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score
 
 ---
