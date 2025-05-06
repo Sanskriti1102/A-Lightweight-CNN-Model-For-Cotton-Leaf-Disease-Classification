@@ -1,61 +1,66 @@
+# Lightweight CNN Model for Cotton Leaf Disease Classification
 
-# 🌿 A Lightweight CNN Model for Cotton Leaf Disease Classification
+📄 **Journal Paper**: *Published in Journal of Critical Reviews (Vol. 12, Issue 01, 2025)*  
+🔗 [10.53555/jcr.v12:i1.13221](https://jcreview.com/archives/volume-12/issue-1/13221)
 
-## 🧠 Overview
-This project implements a lightweight Convolutional Neural Network (CNN) for classifying cotton leaf diseases. The model is designed to be computationally efficient and suitable for deployment on edge devices, providing real-time disease detection to assist farmers in timely intervention.
+📜 **Acceptance Certificate**: _[Attached in repository under `Acceptance_Letter.pdf`]_
 
-## 🎯 Objectives
-- Develop a custom CNN model that balances performance and computational cost.
-- Accurately classify cotton leaves into four categories.
-- Enable real-time, on-field usage by making the model lightweight.
+---
 
-## 📂 Dataset
-The dataset used in this project includes images categorized into the following four classes:
-- **Healthy**
-- **Alternaria Leaf Spot**
-- **Bacterial Blight**
-- **Curl Virus**
+## 🔰 Introduction
 
-All images are resized to **256×256×3** before being fed into the model.
+This project implements a **lightweight Convolutional Neural Network (CNN)** for the classification of **cotton leaf diseases**—specifically *bacterial blight*, *cotton curl virus*, and *fusarium wilt*. The goal is to assist farmers and agronomists with fast, accurate, and affordable disease detection using image-based AI.
 
-## 🏗️ Model Architecture
-The proposed CNN model includes:
-- **Input Layer**: Accepts 256×256×3 images.
-- **3 Convolutional Layers**: Each followed by Batch Normalization, ReLU activation, and Max Pooling.
-- **Flatten Layer**: To convert 2D matrices into a 1D vector.
-- **Fully Connected Layers**: Two dense layers for feature learning.
-- **Output Layer**: Softmax activation to classify into 4 classes.
+---
 
-### 🔧 Layer-wise Details:
-| Layer Type         | Parameters                         |
-|--------------------|-------------------------------------|
-| Convolutional      | 3×3 filters, stride 1               |
-| Batch Normalization| Applied after each conv layer       |
-| Activation         | ReLU                                |
-| Max Pooling        | 2×2 window                          |
-| Dense (FC Layers)  | 128 and 64 units                    |
-| Output Layer       | 4 units with Softmax activation     |
+## 🌟 Why This Matters
 
-## 🧪 Performance
-- **Accuracy Achieved**: ~97.3%
-- **Model Size**: Small enough for edge deployment.
-- **Inference Time**: Optimized for real-time use.
+Traditional plant disease detection relies heavily on manual inspection, which can be slow and unreliable. This research:
 
-## 🔍 Evaluation
-- **Confusion Matrix** and **classification report** were used for performance analysis.
-- The model was tested on unseen data to ensure generalization.
+- ✅ Enables **early diagnosis** to reduce crop loss  
+- ✅ Promotes **cost-effective**, AI-powered agriculture  
+- ✅ Supports **field-level implementation** on low-resource devices
 
-## 🛠️ Tools & Technologies
-- Python
-- TensorFlow / Keras
-- NumPy, Pandas, Matplotlib
-- Google Colab / Jupyter Notebooks
+---
 
-## 🚀 Future Work
-- Integrate with a mobile app for on-field diagnosis.
-- Expand dataset with regional varieties and more disease types.
-- Incorporate explainable AI techniques to interpret predictions.
+## 🗂 Dataset Used
 
-## 📌 Conclusion
-This lightweight CNN offers an effective and deployable solution for real-time classification of cotton leaf diseases, helping farmers take timely actions and reduce crop losses.
+A custom dataset of high-resolution cotton leaf images labeled for:
 
+- **Bacterial Blight**  
+- **Cotton Curl Virus**  
+- **Fusarium Wilt**
+
+Images were preprocessed using resizing, normalization, denoising, and augmentation for improved training efficiency.
+
+---
+
+## 🛠️ Technologies Used
+
+- 🐍 **Python**  
+- 📦 **TensorFlow / Keras** for CNN model design  
+- 📊 **Pandas**, **Matplotlib**, **Seaborn** for data analysis & visualization  
+- 🖼 **OpenCV** for image preprocessing  
+- 🔍 **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score
+
+---
+
+## 📈 Results
+
+- 🧠 **Accuracy**: 96.6% on the test set  
+- 🧪 **Validated Metrics**: Precision, recall, and F1-score > 95%  
+- ⚡ **Lightweight Deployment**: Designed for Raspberry Pi, smartphones, or low-spec machines
+
+---
+
+## 🚀 Future Scope
+
+This project opens up several future possibilities:
+
+- 🌱 **Transfer Learning**: Use of pre-trained models to further improve accuracy with fewer data  
+- 🌐 **IoT Integration**: Deploy with sensors and drones for automated disease monitoring in large-scale farms  
+- 📱 **Mobile App Integration**: Build real-time plant disease detection tools accessible to farmers  
+- 📈 **Expanded Dataset**: Include more disease classes and real-world field images for increased generalization  
+- 🛰 **Satellite + AI Fusion**: Combine remote sensing data with CNN outputs for regional disease prediction
+
+---
