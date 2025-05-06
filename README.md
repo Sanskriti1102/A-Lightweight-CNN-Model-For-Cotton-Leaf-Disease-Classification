@@ -6,7 +6,9 @@
 📜 **Acceptance Certificate**: _[Attached in repository under `Acceptance_Letter.pdf`]_
 
 ---
+## 🚨 Detailed Video of Explaination Only on Youtube: [Watch Now](https://youtu.be/llb3JU1j7gQ)
 ![image](https://github.com/user-attachments/assets/4be736e1-f3dc-4e5e-ad3e-8945804ed83c)
+
 
 ---
 
